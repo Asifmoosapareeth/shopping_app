@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:shopping_app/utils/constants/colors.dart';
 import 'package:shopping_app/utils/constants/image_string.dart';
 import 'package:shopping_app/utils/constants/sizes.dart';
-import 'package:shopping_app/utils/widgets/heading/section_heading.dart';
 import 'package:shopping_app/utils/widgets/layout/grid_layout.dart';
 import 'package:shopping_app/utils/widgets/shapes/circular_container.dart';
 import 'package:shopping_app/utils/widgets/widget/items/my_searchbar.dart';
@@ -11,6 +10,7 @@ import 'package:shopping_app/utils/widgets/widget/items/productcard_vertical.dar
 import '../utils/widgets/shapes/primary_header_container.dart';
 import '../utils/widgets/shapes/rounded_image.dart';
 import '../utils/widgets/text_images/vertical_text_image.dart';
+import '../utils/widgets/texts/section_heading.dart';
 import '../utils/widgets/widget/home_widget/home_appbar.dart';
 import '../utils/widgets/widget/home_widget/home_categories.dart';
 import '../utils/widgets/widget/items/promo_slider.dart';

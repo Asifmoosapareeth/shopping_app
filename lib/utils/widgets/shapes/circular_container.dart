@@ -3,8 +3,8 @@ import 'package:shopping_app/utils/constants/colors.dart';
 class CircularContainer extends StatelessWidget {
   const CircularContainer({
     super.key,
-    this.width = 400,
-    this.height = 400,
+    this.width ,
+    this.height,
     this.radius = 400,
     this.padding ,
     this.child,
@@ -17,7 +17,7 @@ class CircularContainer extends StatelessWidget {
   final double? height;
   final double radius;
   final EdgeInsetsGeometry? padding;
-  final EdgeInsets? margin;
+  final EdgeInsetsGeometry? margin;
   final Widget? child;
   final bool showBorder;
   final Color borderColor;

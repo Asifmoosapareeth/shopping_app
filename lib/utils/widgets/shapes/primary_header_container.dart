@@ -20,8 +20,8 @@ class PrimaryHeaderContainer extends StatelessWidget {
           height: 400,
           child: Stack(
             children: [
-              Positioned(top: -130,right: -260, child: CircularContainer(backgroundColor: Colors.white.withOpacity(0.1),)),
-              Positioned(top: 100,right: -280,  child: CircularContainer(backgroundColor: Colors.white.withOpacity(0.1),)),
+              Positioned(top: -130,right: -260, child: CircularContainer(backgroundColor: Colors.white.withOpacity(0.1),height: 400,width: 400,)),
+              Positioned(top: 100,right: -280,  child: CircularContainer(backgroundColor: Colors.white.withOpacity(0.1),height: 400,width: 400,)),
               child
             ],
           ),

@@ -4,10 +4,13 @@ import 'package:iconsax/iconsax.dart';
 import 'package:shopping_app/utils/constants/colors.dart';
 import 'package:shopping_app/utils/constants/image_string.dart';
 import 'package:shopping_app/utils/constants/sizes.dart';
-import 'package:shopping_app/utils/widgets/heading/product_title_text.dart';
 import 'package:shopping_app/utils/widgets/shapes/circular_container.dart';
 import 'package:shopping_app/utils/widgets/shapes/rounded_image.dart';
+import 'package:shopping_app/utils/widgets/texts/brand_title_text.dart';
+import 'package:shopping_app/utils/widgets/texts/brand_title_text_icon.dart';
 import 'package:shopping_app/utils/widgets/widget/items/circular_icon.dart';
+
+import '../../texts/product_title_text.dart';
 
 class VerticalProductCard  extends StatelessWidget {
   const VerticalProductCard ({super.key});
@@ -60,13 +63,7 @@ class VerticalProductCard  extends StatelessWidget {
               children: [
                 ProductTiltleText(title: 'Green Nike Air Shoes',smallSize: true,),
                 SizedBox(height: MySizes.spaceBtwItems/2,),
-                Row(
-                  children: [
-                    Text('Nike',overflow: TextOverflow.ellipsis,maxLines: 1,style: TextStyle(color: Colors.grey,fontSize: 14)),
-                    SizedBox(width: MySizes.xs,),
-                    Icon(Iconsax.verify5,color: Colors.blue,size: MySizes.iconXs,)
-                  ],
-                ),
+               BrandTitleWithVerifyIcon(title: 'Nike',iconSize: MySizes.md,)
               ],
             ),
             ),
@@ -75,7 +72,7 @@ class VerticalProductCard  extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 8),
+                  padding: const EdgeInsets.only(left: 15),
                   child: Text('\$35.5',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,

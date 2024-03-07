@@ -40,7 +40,8 @@ class HomeScreen extends StatelessWidget {
                  MySectionHeading(title: 'Popular Categories',showActionButton: false,textColor: Colors.white,),
                  SizedBox(height: MySizes.spaceBtwItems,),
 
-                 HomeCategories()
+                 HomeCategories(),
+                 SizedBox(height: MySizes.spaceBtwSections,)
                ],
              ),
            ),

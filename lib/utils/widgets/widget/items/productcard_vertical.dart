@@ -1,12 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:shopping_app/screens/product_detail_screen.dart';
 import 'package:shopping_app/utils/constants/colors.dart';
 import 'package:shopping_app/utils/constants/image_string.dart';
 import 'package:shopping_app/utils/constants/sizes.dart';
 import 'package:shopping_app/utils/widgets/shapes/circular_container.dart';
 import 'package:shopping_app/utils/widgets/shapes/rounded_image.dart';
-import 'package:shopping_app/utils/widgets/texts/brand_title_text.dart';
 import 'package:shopping_app/utils/widgets/texts/brand_title_text_icon.dart';
 import 'package:shopping_app/utils/widgets/widget/items/circular_icon.dart';
 
@@ -18,7 +19,7 @@ class VerticalProductCard  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){},
+      onTap: ()=> Get.to( const ProductDetail()),
       child: Container(
         width: 180,
         padding: EdgeInsets.all(1),
